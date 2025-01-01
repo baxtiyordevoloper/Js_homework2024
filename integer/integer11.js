@@ -1,7 +1,7 @@
-let a = 23;
+let a = 241;
 
-let b = Math.floor(a/10); //2
-let s = a % 10 ; // 3
+let b = Math.floor(a/100); //2
+let s = a % 100 ; // 3
 
 let yigindi = b + s ;
 let kopaytma = b * s
