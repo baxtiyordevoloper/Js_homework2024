@@ -15,7 +15,7 @@
 // -----------------------------------------------
 
 // If 2
-    
+
 // let a = 40;
 // let b = -20;
 // let c = 23;
@@ -86,7 +86,7 @@
 // ----------------------------------------------------------
 // If 7
 
-// let x = 1.5;
+// let x = -9;
 // let fx;
 
 // if(x<0){
@@ -174,11 +174,42 @@
 // -----------------------------------------------------
 
 // If 12
+// let n = Number(prompt("son kiriting")) //2
+// console.log(n*n);//4
+
 // -----------------------------------------------------
 // If 13
-// -----------------------------------------------------
-// If 14
+// let price = 20;
+// let on_break = false;
+// if(price >=20 && on_break == true){
+//   console.log("daftar olish mumkin");
+// } else{
+//   console.log('daftar olish mumkin emas', ); 
+// }
+// 2 usul
+// let price = 20;
+// let money = Number(prompt("pul miqdorini yozing"));
+// let on_break = true;
 
+// if (price < money && on_break) {
+//   console.log("daftar olish mumkin");
+// } else {
+//   console.log('daftar olish mumkin emas',);
+// }
+
+// -----------------------------------------------------
+// If 14f
+// let n = 43;
+
+// let a = Math.floor(n/10);//2
+// let b = n % 10; //72
+// let s = b *10 + a;
+
+// if(s <= n){
+//   console.log("true");
+// } else{
+//   console.log("false"); 
+// }
 
 // -----------------------------------------------------
 
@@ -206,3 +237,31 @@
 // let b = Math.round(n/10);
 // let s = a+b;
 // console.log(s);
+
+// -----------------------------------------------------
+// If 17
+// let n = 45;
+
+// let a = Math.floor(n/10);//4
+// let b = Math.round(n/10);
+// let s = a+b;
+function toqRaqamlarYegindisi(n) {
+  let yigindi = 0; // Yig'indini saqlash uchun o'zgaruvchi
+
+  // N sonini stringga aylantirib, har bir raqamni tekshiramiz
+  let raqamlar = n.toString(); 
+
+  for (let i = 0; i < raqamlar.length; i++) {
+      let raqam = parseInt(raqamlar[i]); // Raqamni butun son sifatida olish
+
+      // Agar raqam toq bo'lsa
+      if (raqam % 2 !== 0) {
+          yigindi += raqam; // Toq raqamni yig'indiga qo'shamiz
+      }
+  }
+
+  return yigindi; // Yig'indini qaytaramiz
+}
+
+// Misollar
+console.log(toqRaqamlarYegindisi(345));   // 5

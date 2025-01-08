@@ -1,4 +1,4 @@
-let a = 241;
+let a = 23;
 
 let b = Math.floor(a/100); //2
 let s = a % 100 ; // 3
