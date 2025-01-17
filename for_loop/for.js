@@ -133,28 +133,41 @@
 // console.log("Yig'indi: " +s);
 // ----------------------------------------------------------
 // For 12
-// let n = 5;
-// let S = 1;
+/*let n = 5;
+let S = 1;
 
-// // Ko'paytmani hisoblash
-// for (let i = 1; i <= n; i++) {
-//     S *= (1 + i / 10); // Har bir qadamda ko'paytirish
-// }
+// Ko'paytmani hisoblash
+for (let i = 1; i <= n; i++) {
+    S *= (1 + i / 10); // Har bir qadamda ko'paytirish
+}
 
-// // Natijani chiqarish
-// console.log("Ko'paytma S = " + S.toFixed(2));
-// ----------------------------------------------------------
+// Natijani chiqarish
+console.log("Ko'paytma S = " + S.toFixed(2)); */
+//----------------------------------------------------------
+// For 13
+/*let n = 10;
+let s = 0;
+let x = 1;
+
+for(let i = 1; i<=n; i++){
+  let h = (10 + i) / 10;
+  s += h * x;
+  x = -x
+}
+console.log(s); */
+
+
 // For 14
-// let n = 5;
-// let s = 0;
+/*let n = 5;
+let s = 0;
 
-// for (let i = 1; i <= n; i++) {
-//     s += (2 * i - 1);
-//     console.log(i);
+for (let i = 1; i <= n; i++) {
+    s += (2 * i - 1);
+    console.log(i);
 
-// }
+}
 
-// console.log(s);// 25
+console.log(s); */ // 25
 
 // ----------------------------------------------------------
 // For 15
@@ -237,15 +250,34 @@
 // }
 
 // For 20;
-// let n = 5;
-// let s = 1;
+/*let n = 5;
+let s = 1;
 
-// for (let k = 1; k <= n; k++) {
-//     let fact = 1; // k! hisoblash
-//     for (let i = 1; i <= k; i++) {
-//         fact *= i;
-//     }
-//     s += 1 / fact; // 1/(k!) yig‘indiga qo‘shish
-// }
+for (let k = 1; k <= n; k++) {
+    let fact = 1; // k! hisoblash
+    for (let i = 1; i <= k; i++) {
+        fact *= i;
+    }
+    s += 1 / fact; // 1/(k!) yig‘indiga qo‘shish
+}
+
+console.log("Yig'indi S = " + s);  */
 
 // console.log("Yig'indi S = " + s);
+
+//-------------------------------------------
+//For 21
+// 1 + 1/(1!) + 1/(2!) + 1/(3!) +..1/(n!)
+
+/*let n = 10;
+let sum = 1;
+let fact = 1;
+
+for(let i = 1; i <= n; i++){
+  fact *=  i;
+  sum += 1/fact;
+  
+}
+console.log(sum); */
+
+
